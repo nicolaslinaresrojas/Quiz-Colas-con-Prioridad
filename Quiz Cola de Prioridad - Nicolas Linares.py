@@ -76,7 +76,7 @@ class ColaPrioridad:
             print("Siguiente solicitud a ser atendida:")
             print("Nombre:", llamada.nombre)
             print("Edad:", llamada.edad)
-            print("Dirección:", llamada.direccion)
+            print("Direccion:", llamada.direccion)
             print("Motivo:", llamada.motivo)
             print("Gravedad:", llamada.gravedad)
         else:
@@ -86,10 +86,10 @@ class ColaPrioridad:
         print("Cola de atención en este momento:")
         for i in range(1, self.monticulo.tamanoActual + 1):
             llamada = self.monticulo.listaMonticulo[i]
-            print("Posición:", i)
+            print("Posicion:", i)
             print("Nombre:", llamada.nombre)
             print("Edad:", llamada.edad)
-            print("Dirección:", llamada.direccion)
+            print("Direccion:", llamada.direccion)
             print("Motivo:", llamada.motivo)
             print("Gravedad:", llamada.gravedad)
             
@@ -111,7 +111,7 @@ while True:
             
             nombre = input("Ingrese nombre completo: ")
             edad = int(input("Ingrese edad: "))
-            direccion = input("Ingrese dirección: ")
+            direccion = input("Ingrese direccion: ")
             motivo = input("Ingrese motivo de la llamada: ")
             gravedad = int(input("Ingrese gravedad (1-5): "))
             llamada = Llamada(nombre, edad, direccion, motivo, gravedad)
